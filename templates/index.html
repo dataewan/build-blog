@@ -1,0 +1,39 @@
+{% extends "dataewan_template.html" %}
+
+{% block pagetitle %}
+Dataewan
+{% endblock %}
+
+{% block content %}
+<h3>Posts</h3>
+<table id="posts-table">
+  <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+      </tr>
+  </thead>
+  <tbody>
+{% for page in site.pages|sort(attribute='meta.date', reverse=True) %}
+
+    {% if page.meta.type != 'index' and page.meta.type != 'page' %}
+
+    <tr>
+      <td><a href="{{ page.meta.url }}">{{ page.meta.title }}</a></td>
+      <td>{{ page.meta.date }}</td>
+    </tr>
+    {% endif %}
+
+{% endfor %}
+</tbody>
+</table>
+
+<script type="text/javascript">
+$(document).ready(function() 
+    { 
+        $("#posts-table").tablesorter(); 
+    } 
+); 
+</script>
+
+{% endblock %}

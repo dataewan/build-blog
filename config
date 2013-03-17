@@ -1,0 +1,2 @@
+url_pattern: /{category}/{date}/{slug}.{ext}
+output_dir: dataewan.github.com

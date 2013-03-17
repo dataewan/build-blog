@@ -1,0 +1,6 @@
+/*  Styling options for restructured text.
+ */
+/* line 5, ../../sass/rst.sass */
+div.note {
+  border: solid 1px black;
+}
