@@ -12,4 +12,3 @@ clean:
 
 scripts:
 	cp dataewan.github.com/js/* media/js 
-
