@@ -6,27 +6,34 @@ Say I have a choice between two tools:
 one that holds its configuration, data and content in flat text files,
 or one that has a lovely polished user interface and hides the complexity from me.
 I'll almost always select the tool that uses text files and is more difficult to configure.
-I don't think this is a very normal point of view.
-I'll take some time to explain what I like so much about text files.
+I don't think this is a very normal point of view,
+so I'll take some time to explain what I like so much about text files.
 
 The first thing is that lots of clever programmers through history have spent most of their time working with text files 
 - the source code for most programs are just text files.
 So these clever programmers have made lots of tools that make manipulating text files much more pleasant.
-I want to this combination of effort to make my life easier.
-"Standing on the shoulders of giants", as Newton said_.
+I want to take this combination of effort, and use it to make my life easier.
+"Standing on the shoulders of giants", as Newton `put it`_.
 
-.. _said: http://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants
+.. _`put it`: http://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants
 
 Another advantage is that I can use the same tools for almost everything.
 I can use the same set of text manipulation tools to access my data,
 prepare my data,
 do some processing and even do things like present my findings or document my analysis.
 Using the same set of tools for all your work means you become an expert in your tools much more quickly,
-and makes it frictionless to move from one stage of your analysis to the next stage.
+making it frictionless to move from one stage of your analysis to the next stage.
 You don't have to change mental mode from "working in SQL Server" mode to "working in Excel" mode.
-You can use the clever tricks from one stage of your analysis in the other stages of your analysis.
+You can re-use the clever tricks from one stage of your analysis in the other stages of your analysis.
 
-Here are some of those clever tools I was talking about.
+As so much of my current workflow is based on working with text files,
+it becomes much easier to integrate new tools into my workflow.
+I don't have to worry too much about the compatibility of different tools,
+because all of my favourite tools will consume and produce text files.
+
+Hopefully I've convinced you that I'm not just being awkward,
+that I personally find text based tools much more pleasant to work with.
+Here are some of those clever tools I was talking about:
 
 ----
 
@@ -37,7 +44,8 @@ There are lots of really good text editors.
 Personally, I really like ``vim``, but there are plenty of other excellent_ editors_ out there.
 
 Any good text editor should make writing and editing text files a real pleasure.
-A good text editor will become an easy way to express your ideas.
+A good text editor will become an easy way to express your ideas in a useful way;
+whether it is writing a few scribbled notes, a well thought out document or writing a program.
 
 .. _excellent: http://www.gnu.org/software/emacs/
 .. _editors: http://www.sublimetext.com/
@@ -63,13 +71,15 @@ The real power of these commands comes from the `piping mechanism`_ that is part
 These let you redirect the output from commands into other commands, 
 or redirect the output from commands into text files.
 
-For example: this command takes the contents of all the python files in the current directory (``cat *.py``),
+For example, this command looks for all the things I've marked as TODO in my python scripts and writes them to a single text file.
+It takes the contents of all the python files in the current directory (``cat *.py``),
 then redirects these contents to ``grep "TODO"``, which filters out only the rows that contain the string "TODO".
 Then these rows that contain "TODO" are put out to a file called `tasks.txt`.
 
 .. sourcecode:: console
 
     cat *.py | grep "TODO" > tasks.txt
+
 
 
 .. _`piping mechanism`: http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-103-4/
@@ -107,7 +117,7 @@ A bit like a standard letter in word processing software
 if you've used those.
 
 Templates are usually used to make HTML documents,
-but they could be used to make things like data driven reports.
+but they could be used to make things like dynamic data driven reports.
 
 .. _jinja2: http://jinja.pocoo.org/docs/
 
@@ -116,7 +126,9 @@ Wok
 ___
 
 wok_ makes static websites from text files.
-I use it to make this blog,
-it is very flexible and could be used to make other outputs as well.
+I use it to make this blog.
+There are lots of other static website generators around.
+I chose wok as it is very flexible,
+I want to try using it to create other types of output - not just websites.
 
 .. _wok: http://wok.mythmon.com/
