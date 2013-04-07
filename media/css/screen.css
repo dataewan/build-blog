@@ -383,11 +383,15 @@ footer {
   /* Generic.Deleted */
   /* Generic.Deleted.Specific */
   /* Generic.Emph */
+  /* Generic.Error */
   /* Generic.Heading */
   /* Generic.Inserted */
   /* Generic.Inserted.Specific */
+  /* Generic.Output */
+  /* Generic.Prompt */
   /* Generic.Strong */
   /* Generic.Subheading */
+  /* Generic.Traceback */
   /* Keyword.Constant */
   /* Keyword.Declaration */
   /* Keyword.Pseudo */
@@ -397,24 +401,35 @@ footer {
   /* Name.Builtin */
   /* Name.Class */
   /* Name.Constant */
+  /* Name.Entity */
   /* Name.Exception */
   /* Name.Function */
   /* Name.Namespace */
   /* Name.Tag */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
   /* Name.Variable.Global */
   /* Name.Variable.Instance */
   /* Name.Variable */
+  /* Text.Whitespace */
   /* Literal.Number.Float */
   /* Literal.Number */
   /* Literal.Number.Hex */
   /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
   /* Literal.String */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
   /* Literal.String.Doc */
   /* Literal.String.Double */
   /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
   /* Literal.String.Interpol */
+  /* Literal.String.Other */
   /* Literal.String.Regex */
   /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Literal.Number.Integer.Long */
 }
 /* line 50, ../../sass/_pygments.scss */
 .highlight > pre .c {
@@ -482,6 +497,10 @@ footer {
   color: #93a1a1 !important;
   font-style: italic !important;
 }
+/* line 63, ../../sass/_pygments.scss */
+.highlight > pre .gr {
+  color: #aa0000;
+}
 /* line 64, ../../sass/_pygments.scss */
 .highlight > pre .gh {
   color: #586e75 !important;
@@ -498,6 +517,14 @@ footer {
   background-color: #355720 !important;
   display: inline-block;
 }
+/* line 67, ../../sass/_pygments.scss */
+.highlight > pre .go {
+  color: #888888;
+}
+/* line 68, ../../sass/_pygments.scss */
+.highlight > pre .gp {
+  color: #555555;
+}
 /* line 69, ../../sass/_pygments.scss */
 .highlight > pre .gs {
   color: #93a1a1 !important;
@@ -506,6 +533,10 @@ footer {
 /* line 70, ../../sass/_pygments.scss */
 .highlight > pre .gu {
   color: #6c71c4 !important;
+}
+/* line 71, ../../sass/_pygments.scss */
+.highlight > pre .gt {
+  color: #aa0000;
 }
 /* line 72, ../../sass/_pygments.scss */
 .highlight > pre .kc {
@@ -550,6 +581,10 @@ footer {
 .highlight > pre .no {
   color: #b58900 !important;
 }
+/* line 82, ../../sass/_pygments.scss */
+.highlight > pre .ni {
+  color: purple;
+}
 /* line 83, ../../sass/_pygments.scss */
 .highlight > pre .nl {
   color: #859900 !important;
@@ -577,6 +612,14 @@ footer {
 .highlight > pre .nx {
   color: #b58900 !important;
 }
+/* line 89, ../../sass/_pygments.scss */
+.highlight > pre .bp {
+  color: #999999;
+}
+/* line 90, ../../sass/_pygments.scss */
+.highlight > pre .vc {
+  color: teal;
+}
 /* line 91, ../../sass/_pygments.scss */
 .highlight > pre .vg {
   color: #268bd2 !important;
@@ -588,6 +631,10 @@ footer {
 /* line 93, ../../sass/_pygments.scss */
 .highlight > pre .nv {
   color: #268bd2 !important;
+}
+/* line 94, ../../sass/_pygments.scss */
+.highlight > pre .w {
+  color: #bbbbbb;
 }
 /* line 95, ../../sass/_pygments.scss */
 .highlight > pre .mf {
@@ -605,9 +652,21 @@ footer {
 .highlight > pre .mi {
   color: #2aa198 !important;
 }
+/* line 99, ../../sass/_pygments.scss */
+.highlight > pre .mo {
+  color: #009999;
+}
 /* line 100, ../../sass/_pygments.scss */
 .highlight > pre .s {
   color: #2aa198 !important;
+}
+/* line 101, ../../sass/_pygments.scss */
+.highlight > pre .sb {
+  color: #dd1144;
+}
+/* line 102, ../../sass/_pygments.scss */
+.highlight > pre .sc {
+  color: #dd1144;
 }
 /* line 103, ../../sass/_pygments.scss */
 .highlight > pre .sd {
@@ -621,9 +680,17 @@ footer {
 .highlight > pre .se {
   color: #dc322f !important;
 }
+/* line 106, ../../sass/_pygments.scss */
+.highlight > pre .sh {
+  color: #dd1144;
+}
 /* line 107, ../../sass/_pygments.scss */
 .highlight > pre .si {
   color: #268bd2 !important;
+}
+/* line 108, ../../sass/_pygments.scss */
+.highlight > pre .sx {
+  color: #dd1144;
 }
 /* line 109, ../../sass/_pygments.scss */
 .highlight > pre .sr {
@@ -632,6 +699,14 @@ footer {
 /* line 110, ../../sass/_pygments.scss */
 .highlight > pre .s1 {
   color: #2aa198 !important;
+}
+/* line 111, ../../sass/_pygments.scss */
+.highlight > pre .ss {
+  color: #990073;
+}
+/* line 112, ../../sass/_pygments.scss */
+.highlight > pre .il {
+  color: #009999;
 }
 /* line 113, ../../sass/_pygments.scss */
 .highlight > pre div .gd, .highlight > pre div .gd .x, .highlight > pre div .gi, .highlight > pre div .gi .x {
