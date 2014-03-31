@@ -1,0 +1,12 @@
+/* line 2, ../../../sass/sass/chart.scss */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+/* line 8, ../../../sass/sass/chart.scss */
+.axis > .tick {
+  font-size: 10px;
+}

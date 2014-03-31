@@ -1,7 +1,7 @@
 wok:	sass
 	wok
 
-wok-server:	sass
+wok-server: sass
 	wok --server
 
 sass:	clean
