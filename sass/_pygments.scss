@@ -15,7 +15,7 @@ $solar-blue:      #268bd2 !default;
 $solar-cyan:      #2aa198 !default;
 $solar-green:     #859900 !default;
 
-$solarized: dark !default;
+$solarized: light !default;
 
 @if $solarized == light {
 
@@ -45,6 +45,8 @@ $pre-color: $base1 !default;
 
 .highlight > pre {
   background-color: $base03;
+  border-top: 1px solid $base1;
+  border-bottom: 1px solid $base1;
   padding-left: 3px;
   padding-right: 3px;
   .c      { color: $base01 !important; font-style: italic !important; }                     /* Comment */
