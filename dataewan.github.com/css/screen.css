@@ -367,7 +367,9 @@ footer {
 /* non highlighted code colors */
 /* line 46, ../../sass/_pygments.scss */
 .highlight > pre {
-  background-color: #002b36;
+  background-color: white;
+  border-top: 1px solid #586e75;
+  border-bottom: 1px solid #586e75;
   padding-left: 3px;
   padding-right: 3px;
   /* Comment */
@@ -383,11 +385,15 @@ footer {
   /* Generic.Deleted */
   /* Generic.Deleted.Specific */
   /* Generic.Emph */
+  /* Generic.Error */
   /* Generic.Heading */
   /* Generic.Inserted */
   /* Generic.Inserted.Specific */
+  /* Generic.Output */
+  /* Generic.Prompt */
   /* Generic.Strong */
   /* Generic.Subheading */
+  /* Generic.Traceback */
   /* Keyword.Constant */
   /* Keyword.Declaration */
   /* Keyword.Pseudo */
@@ -397,243 +403,314 @@ footer {
   /* Name.Builtin */
   /* Name.Class */
   /* Name.Constant */
+  /* Name.Entity */
   /* Name.Exception */
   /* Name.Function */
   /* Name.Namespace */
   /* Name.Tag */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
   /* Name.Variable.Global */
   /* Name.Variable.Instance */
   /* Name.Variable */
+  /* Text.Whitespace */
   /* Literal.Number.Float */
   /* Literal.Number */
   /* Literal.Number.Hex */
   /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
   /* Literal.String */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
   /* Literal.String.Doc */
   /* Literal.String.Double */
   /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
   /* Literal.String.Interpol */
+  /* Literal.String.Other */
   /* Literal.String.Regex */
   /* Literal.String.Single */
-}
-/* line 50, ../../sass/_pygments.scss */
-.highlight > pre .c {
-  color: #586e75 !important;
-  font-style: italic !important;
-}
-/* line 51, ../../sass/_pygments.scss */
-.highlight > pre .cm {
-  color: #586e75 !important;
-  font-style: italic !important;
+  /* Literal.String.Symbol */
+  /* Literal.Number.Integer.Long */
 }
 /* line 52, ../../sass/_pygments.scss */
-.highlight > pre .cp {
-  color: #586e75 !important;
+.highlight > pre .c {
+  color: #93a1a1 !important;
   font-style: italic !important;
 }
 /* line 53, ../../sass/_pygments.scss */
-.highlight > pre .c1 {
-  color: #586e75 !important;
+.highlight > pre .cm {
+  color: #93a1a1 !important;
   font-style: italic !important;
 }
 /* line 54, ../../sass/_pygments.scss */
-.highlight > pre .cs {
-  color: #586e75 !important;
-  font-weight: bold !important;
+.highlight > pre .cp {
+  color: #93a1a1 !important;
   font-style: italic !important;
 }
 /* line 55, ../../sass/_pygments.scss */
+.highlight > pre .c1 {
+  color: #93a1a1 !important;
+  font-style: italic !important;
+}
+/* line 56, ../../sass/_pygments.scss */
+.highlight > pre .cs {
+  color: #93a1a1 !important;
+  font-weight: bold !important;
+  font-style: italic !important;
+}
+/* line 57, ../../sass/_pygments.scss */
 .highlight > pre .err {
   color: #dc322f !important;
   background: none !important;
 }
-/* line 56, ../../sass/_pygments.scss */
+/* line 58, ../../sass/_pygments.scss */
 .highlight > pre .k {
   color: #cb4b16 !important;
 }
-/* line 57, ../../sass/_pygments.scss */
+/* line 59, ../../sass/_pygments.scss */
 .highlight > pre .o {
-  color: #93a1a1 !important;
+  color: #586e75 !important;
   font-weight: bold !important;
 }
-/* line 58, ../../sass/_pygments.scss */
+/* line 60, ../../sass/_pygments.scss */
 .highlight > pre .p {
-  color: #93a1a1 !important;
+  color: #586e75 !important;
 }
-/* line 59, ../../sass/_pygments.scss */
+/* line 61, ../../sass/_pygments.scss */
 .highlight > pre .ow {
   color: #2aa198 !important;
   font-weight: bold !important;
 }
-/* line 60, ../../sass/_pygments.scss */
-.highlight > pre .gd {
-  color: #93a1a1 !important;
-  background-color: #372c34 !important;
-  display: inline-block;
-}
-/* line 61, ../../sass/_pygments.scss */
-.highlight > pre .gd .x {
-  color: #93a1a1 !important;
-  background-color: #4d2d33 !important;
-  display: inline-block;
-}
 /* line 62, ../../sass/_pygments.scss */
-.highlight > pre .ge {
-  color: #93a1a1 !important;
-  font-style: italic !important;
+.highlight > pre .gd {
+  color: #586e75 !important;
+  background-color: #f6cbcb !important;
+  display: inline-block;
+}
+/* line 63, ../../sass/_pygments.scss */
+.highlight > pre .gd .x {
+  color: #586e75 !important;
+  background-color: #f2b7b6 !important;
+  display: inline-block;
 }
 /* line 64, ../../sass/_pygments.scss */
-.highlight > pre .gh {
+.highlight > pre .ge {
   color: #586e75 !important;
+  font-style: italic !important;
 }
 /* line 65, ../../sass/_pygments.scss */
-.highlight > pre .gi {
-  color: #93a1a1 !important;
-  background-color: #1a412b !important;
-  display: inline-block;
+.highlight > pre .gr {
+  color: #aa0000;
 }
 /* line 66, ../../sass/_pygments.scss */
-.highlight > pre .gi .x {
+.highlight > pre .gh {
   color: #93a1a1 !important;
-  background-color: #355720 !important;
+}
+/* line 67, ../../sass/_pygments.scss */
+.highlight > pre .gi {
+  color: #586e75 !important;
+  background-color: #e6eacc !important;
+  display: inline-block;
+}
+/* line 68, ../../sass/_pygments.scss */
+.highlight > pre .gi .x {
+  color: #586e75 !important;
+  background-color: #ced699 !important;
   display: inline-block;
 }
 /* line 69, ../../sass/_pygments.scss */
-.highlight > pre .gs {
-  color: #93a1a1 !important;
-  font-weight: bold !important;
+.highlight > pre .go {
+  color: #888888;
 }
 /* line 70, ../../sass/_pygments.scss */
+.highlight > pre .gp {
+  color: #555555;
+}
+/* line 71, ../../sass/_pygments.scss */
+.highlight > pre .gs {
+  color: #586e75 !important;
+  font-weight: bold !important;
+}
+/* line 72, ../../sass/_pygments.scss */
 .highlight > pre .gu {
   color: #6c71c4 !important;
 }
-/* line 72, ../../sass/_pygments.scss */
+/* line 73, ../../sass/_pygments.scss */
+.highlight > pre .gt {
+  color: #aa0000;
+}
+/* line 74, ../../sass/_pygments.scss */
 .highlight > pre .kc {
   color: #859900 !important;
   font-weight: bold !important;
 }
-/* line 73, ../../sass/_pygments.scss */
+/* line 75, ../../sass/_pygments.scss */
 .highlight > pre .kd {
   color: #268bd2 !important;
 }
-/* line 74, ../../sass/_pygments.scss */
+/* line 76, ../../sass/_pygments.scss */
 .highlight > pre .kp {
   color: #cb4b16 !important;
   font-weight: bold !important;
 }
-/* line 75, ../../sass/_pygments.scss */
+/* line 77, ../../sass/_pygments.scss */
 .highlight > pre .kr {
   color: #d33682 !important;
   font-weight: bold !important;
 }
-/* line 76, ../../sass/_pygments.scss */
+/* line 78, ../../sass/_pygments.scss */
 .highlight > pre .kt {
   color: #2aa198 !important;
 }
-/* line 77, ../../sass/_pygments.scss */
+/* line 79, ../../sass/_pygments.scss */
 .highlight > pre .n {
   color: #268bd2 !important;
 }
-/* line 78, ../../sass/_pygments.scss */
+/* line 80, ../../sass/_pygments.scss */
 .highlight > pre .na {
   color: #268bd2 !important;
 }
-/* line 79, ../../sass/_pygments.scss */
+/* line 81, ../../sass/_pygments.scss */
 .highlight > pre .nb {
   color: #859900 !important;
 }
-/* line 80, ../../sass/_pygments.scss */
+/* line 82, ../../sass/_pygments.scss */
 .highlight > pre .nc {
   color: #d33682 !important;
 }
-/* line 81, ../../sass/_pygments.scss */
+/* line 83, ../../sass/_pygments.scss */
 .highlight > pre .no {
   color: #b58900 !important;
 }
-/* line 83, ../../sass/_pygments.scss */
+/* line 84, ../../sass/_pygments.scss */
+.highlight > pre .ni {
+  color: purple;
+}
+/* line 85, ../../sass/_pygments.scss */
 .highlight > pre .nl {
   color: #859900 !important;
 }
-/* line 84, ../../sass/_pygments.scss */
+/* line 86, ../../sass/_pygments.scss */
 .highlight > pre .ne {
   color: #268bd2 !important;
   font-weight: bold !important;
 }
-/* line 85, ../../sass/_pygments.scss */
+/* line 87, ../../sass/_pygments.scss */
 .highlight > pre .nf {
   color: #268bd2 !important;
   font-weight: bold !important;
 }
-/* line 86, ../../sass/_pygments.scss */
+/* line 88, ../../sass/_pygments.scss */
 .highlight > pre .nn {
   color: #b58900 !important;
 }
-/* line 87, ../../sass/_pygments.scss */
+/* line 89, ../../sass/_pygments.scss */
 .highlight > pre .nt {
   color: #268bd2 !important;
   font-weight: bold !important;
 }
-/* line 88, ../../sass/_pygments.scss */
+/* line 90, ../../sass/_pygments.scss */
 .highlight > pre .nx {
   color: #b58900 !important;
 }
 /* line 91, ../../sass/_pygments.scss */
+.highlight > pre .bp {
+  color: #999999;
+}
+/* line 92, ../../sass/_pygments.scss */
+.highlight > pre .vc {
+  color: teal;
+}
+/* line 93, ../../sass/_pygments.scss */
 .highlight > pre .vg {
   color: #268bd2 !important;
 }
-/* line 92, ../../sass/_pygments.scss */
+/* line 94, ../../sass/_pygments.scss */
 .highlight > pre .vi {
   color: #268bd2 !important;
 }
-/* line 93, ../../sass/_pygments.scss */
+/* line 95, ../../sass/_pygments.scss */
 .highlight > pre .nv {
   color: #268bd2 !important;
 }
-/* line 95, ../../sass/_pygments.scss */
+/* line 96, ../../sass/_pygments.scss */
+.highlight > pre .w {
+  color: #bbbbbb;
+}
+/* line 97, ../../sass/_pygments.scss */
 .highlight > pre .mf {
   color: #2aa198 !important;
 }
-/* line 96, ../../sass/_pygments.scss */
+/* line 98, ../../sass/_pygments.scss */
 .highlight > pre .m {
   color: #2aa198 !important;
 }
-/* line 97, ../../sass/_pygments.scss */
+/* line 99, ../../sass/_pygments.scss */
 .highlight > pre .mh {
   color: #2aa198 !important;
 }
-/* line 98, ../../sass/_pygments.scss */
+/* line 100, ../../sass/_pygments.scss */
 .highlight > pre .mi {
   color: #2aa198 !important;
 }
-/* line 100, ../../sass/_pygments.scss */
+/* line 101, ../../sass/_pygments.scss */
+.highlight > pre .mo {
+  color: #009999;
+}
+/* line 102, ../../sass/_pygments.scss */
 .highlight > pre .s {
   color: #2aa198 !important;
 }
 /* line 103, ../../sass/_pygments.scss */
+.highlight > pre .sb {
+  color: #dd1144;
+}
+/* line 104, ../../sass/_pygments.scss */
+.highlight > pre .sc {
+  color: #dd1144;
+}
+/* line 105, ../../sass/_pygments.scss */
 .highlight > pre .sd {
   color: #2aa198 !important;
 }
-/* line 104, ../../sass/_pygments.scss */
+/* line 106, ../../sass/_pygments.scss */
 .highlight > pre .s2 {
   color: #2aa198 !important;
 }
-/* line 105, ../../sass/_pygments.scss */
+/* line 107, ../../sass/_pygments.scss */
 .highlight > pre .se {
   color: #dc322f !important;
 }
-/* line 107, ../../sass/_pygments.scss */
+/* line 108, ../../sass/_pygments.scss */
+.highlight > pre .sh {
+  color: #dd1144;
+}
+/* line 109, ../../sass/_pygments.scss */
 .highlight > pre .si {
   color: #268bd2 !important;
 }
-/* line 109, ../../sass/_pygments.scss */
+/* line 110, ../../sass/_pygments.scss */
+.highlight > pre .sx {
+  color: #dd1144;
+}
+/* line 111, ../../sass/_pygments.scss */
 .highlight > pre .sr {
   color: #2aa198 !important;
 }
-/* line 110, ../../sass/_pygments.scss */
+/* line 112, ../../sass/_pygments.scss */
 .highlight > pre .s1 {
   color: #2aa198 !important;
 }
 /* line 113, ../../sass/_pygments.scss */
+.highlight > pre .ss {
+  color: #990073;
+}
+/* line 114, ../../sass/_pygments.scss */
+.highlight > pre .il {
+  color: #009999;
+}
+/* line 115, ../../sass/_pygments.scss */
 .highlight > pre div .gd, .highlight > pre div .gd .x, .highlight > pre div .gi, .highlight > pre div .gi .x {
   display: inline-block;
   width: 100%;
@@ -725,4 +802,10 @@ a.toc-backref {
 /* line 157, ../../sass/screen.sass */
 div.contents ul {
   list-style-type: none;
+}
+
+/* line 160, ../../sass/screen.sass */
+img {
+  max-width: 100%;
+  height: auto;
 }
