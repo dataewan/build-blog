@@ -1,5 +1,6 @@
 title: Job Satisfaction in the UK
 date: 2014-03-30
+tags: [project, d3, analysis]
 scripts:
     - axeschart.js
     - job_satisfaction.js

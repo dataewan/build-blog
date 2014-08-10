@@ -1,4 +1,5 @@
 title: What's so good about text files?
+tags: text, unix
 date: 2013-04-04
 ---
 

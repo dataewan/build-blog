@@ -1,5 +1,6 @@
 title: Making your own deck.js themes
 date: 2013-04-10
+tags: deckjs
 published: True
 ---
 
