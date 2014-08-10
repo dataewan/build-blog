@@ -15,8 +15,7 @@ Dataewan
   </thead>
   <tbody>
 {% for page in site.pages|sort(attribute='meta.date', reverse=True) %}
-
-    {% if page.meta.type != 'index' and page.meta.type != 'page' %}
+    {% if page.meta.type != 'index' and page.meta.type != 'page' and page.meta.type != 'rss' %}
 
     <tr>
       <td><a href="{{ page.meta.url }}">{{ page.meta.title }}</a></td>

@@ -1,0 +1,8 @@
+title: RSS
+slug: rss
+type: rss
+comment: Nothing here; look at templates/rss.xml
+rss_category: entries
+url: /rss.xml
+date: 2013-04-01
+---

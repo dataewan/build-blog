@@ -1,0 +1,31 @@
+{% set datefmt = '%a, %d %b %Y %H:%M:%S GMT' %}
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="{{ site.base_url }}{{ page.url }}" rel="self" type="application/rss+xml" />
+        <title>dataewan</title>
+        <link>http://dataewan.github.io</link>
+        <language>en-uk</language>
+        <pubDate>{{ site.datetime.strftime(datefmt) }}</pubDate>
+        <description>Data analysis, crunching and visualisation from dataewan</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        {% for item in site.pages %}
+            {% if item.meta.type != 'page' and item.meta.type != 'index' and item.meta.type != 'rss'%}
+                <item>
+                    <title>{{ item.meta.title }}</title>
+                    <link>http://dataewan.github.io{{ item.meta.url }}</link>
+                    <pubDate>{{ item.meta.datetime.strftime(datefmt) }}</pubDate>
+                    <description>
+                        <![CDATA[
+                        {{ item.meta.title|striptags }}
+
+                        ]]>
+                    </description>
+                    <guid>
+                    http://dataewan.github.io{{ item.meta.url }}
+                    </guid>
+                </item>
+            {% endif %}
+        {% endfor %}
+    </channel>
+</rss>
